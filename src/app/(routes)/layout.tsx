@@ -1,7 +1,5 @@
 import { LayoutPropsType } from "@/definitions/types";
-import { MainFooter, MainHeader } from "./_components";
-
-
+import { CopyrightBar, MainFooter, MainHeader } from "./_components";
 
 function Layout({ children }: LayoutPropsType) {
   return (
@@ -9,6 +7,7 @@ function Layout({ children }: LayoutPropsType) {
       <MainHeader />
       {children}
       <MainFooter />
+      <CopyrightBar />
     </div>
   );
 }
